@@ -27,9 +27,9 @@ class MovieTableViewCell: UITableViewCell {
         self.nameLabel.text = movie.name
         
         if movie.seen == true {
-            self.seenButton.setTitle("Not Seen", for: .normal)
-        } else {
             self.seenButton.setTitle("Seen", for: .normal)
+        } else {
+            self.seenButton.setTitle("Not Seen", for: .normal)
         }
     }
 

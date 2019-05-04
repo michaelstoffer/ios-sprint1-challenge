@@ -63,7 +63,7 @@ extension MovieViewController: UITableViewDataSource {
         cell.nameLabel.text = movie.name
         cell.delegate = self
         
-        let seenText = movie.seen ? "Not Seen" : "Seen"
+        let seenText = movie.seen ? "Seen" : "Not Seen"
         cell.seenButton.setTitle(seenText, for: .normal)
         
         return cell
