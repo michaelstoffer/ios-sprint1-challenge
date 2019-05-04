@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="5p5-ck-PLP">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Add Movie View Controller-->
+        <scene sceneID="Aaj-TT-78x">
+            <objects>
+                <viewController id="5p5-ck-PLP" customClass="AddMovieViewController" customModule="Movie_List" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="p1Z-fo-y7L">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add a new movie to the list" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DSI-6a-AmW">
+                                <rect key="frame" x="20" y="94" width="335" height="33.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="28"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qLg-P2-q0v">
+                                <rect key="frame" x="20" y="173.5" width="335" height="30"/>
+                                <state key="normal" title="Add Movie"/>
+                                <connections>
+                                    <action selector="addMovieButtonTapped:" destination="5p5-ck-PLP" eventType="touchUpInside" id="jiI-V5-qRy"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter the movie's title..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Jgv-FU-Xaq">
+                                <rect key="frame" x="20" y="135.5" width="335" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="DSI-6a-AmW" firstAttribute="leading" secondItem="6FW-Ic-ZYW" secondAttribute="leading" constant="20" id="5Qk-4q-S5f"/>
+                            <constraint firstItem="Jgv-FU-Xaq" firstAttribute="leading" secondItem="6FW-Ic-ZYW" secondAttribute="leading" constant="20" id="7lv-1z-91m"/>
+                            <constraint firstItem="qLg-P2-q0v" firstAttribute="leading" secondItem="6FW-Ic-ZYW" secondAttribute="leading" constant="20" id="Bch-WA-1K5"/>
+                            <constraint firstItem="6FW-Ic-ZYW" firstAttribute="trailing" secondItem="DSI-6a-AmW" secondAttribute="trailing" constant="20" id="CuG-d1-HQb"/>
+                            <constraint firstItem="qLg-P2-q0v" firstAttribute="top" secondItem="Jgv-FU-Xaq" secondAttribute="bottom" constant="8" id="E7l-7e-0du"/>
+                            <constraint firstItem="6FW-Ic-ZYW" firstAttribute="trailing" secondItem="Jgv-FU-Xaq" secondAttribute="trailing" constant="20" id="Ide-Iz-jO6"/>
+                            <constraint firstItem="DSI-6a-AmW" firstAttribute="top" secondItem="6FW-Ic-ZYW" secondAttribute="top" constant="30" id="O9K-ch-UQ1"/>
+                            <constraint firstItem="6FW-Ic-ZYW" firstAttribute="trailing" secondItem="qLg-P2-q0v" secondAttribute="trailing" constant="20" id="Ou8-09-R32"/>
+                            <constraint firstItem="Jgv-FU-Xaq" firstAttribute="top" secondItem="DSI-6a-AmW" secondAttribute="bottom" constant="8" id="ahH-Vl-e8w"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6FW-Ic-ZYW"/>
+                    </view>
+                    <connections>
+                        <outlet property="movieNameTextField" destination="Jgv-FU-Xaq" id="FaL-zg-ZCu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tyd-Hv-hSR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2705" y="-169"/>
+        </scene>
+    </scenes>
+</document>

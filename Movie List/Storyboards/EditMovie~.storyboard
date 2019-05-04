@@ -56,7 +56,7 @@
                                         <connections>
                                             <outlet property="nameLabel" destination="YRF-Ff-jHS" id="Qoc-QU-T92"/>
                                             <outlet property="seenButton" destination="YC8-BY-VDC" id="FDn-qJ-rHV"/>
-                                            <segue destination="pnz-6l-Fyi" kind="show" identifier="ToUpdateMovie" id="R0G-tL-Atn"/>
+                                            <segue destination="ToC-Z5-UuI" kind="show" identifier="ToUpdateMovie" id="R0G-tL-Atn"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -105,21 +105,63 @@
             </objects>
             <point key="canvasLocation" x="1094" y="143"/>
         </scene>
+        <!--Edit Movie View Controller-->
+        <scene sceneID="TUW-9D-BVR">
+            <objects>
+                <viewController id="ToC-Z5-UuI" customClass="EditMovieViewController" customModule="Movie_List" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Tqk-Do-EyJ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Update a movie in the list" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hRy-nR-ckH">
+                                <rect key="frame" x="20" y="94" width="335" height="34"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="28"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ODv-tO-NBe">
+                                <rect key="frame" x="20" y="174" width="335" height="30"/>
+                                <state key="normal" title="Update Movie"/>
+                                <connections>
+                                    <action selector="updateMovieButtonTapped:" destination="ToC-Z5-UuI" eventType="touchUpInside" id="rSW-LC-WHb"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter the movie's title..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tBy-5M-5HJ">
+                                <rect key="frame" x="20" y="136" width="335" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="tBy-5M-5HJ" firstAttribute="leading" secondItem="HJZ-lx-sBu" secondAttribute="leading" constant="20" id="BXZ-u4-vJA"/>
+                            <constraint firstItem="hRy-nR-ckH" firstAttribute="leading" secondItem="HJZ-lx-sBu" secondAttribute="leading" constant="20" id="ElZ-VY-hh9"/>
+                            <constraint firstItem="HJZ-lx-sBu" firstAttribute="trailing" secondItem="hRy-nR-ckH" secondAttribute="trailing" constant="20" id="OWq-fb-K1u"/>
+                            <constraint firstItem="ODv-tO-NBe" firstAttribute="top" secondItem="tBy-5M-5HJ" secondAttribute="bottom" constant="8" id="Ymz-DQ-w7P"/>
+                            <constraint firstItem="hRy-nR-ckH" firstAttribute="top" secondItem="HJZ-lx-sBu" secondAttribute="top" constant="30" id="aFf-eo-LWe"/>
+                            <constraint firstItem="HJZ-lx-sBu" firstAttribute="trailing" secondItem="ODv-tO-NBe" secondAttribute="trailing" constant="20" id="d4u-0H-zC8"/>
+                            <constraint firstItem="ODv-tO-NBe" firstAttribute="leading" secondItem="HJZ-lx-sBu" secondAttribute="leading" constant="20" id="dvv-G6-kxt"/>
+                            <constraint firstItem="HJZ-lx-sBu" firstAttribute="trailing" secondItem="tBy-5M-5HJ" secondAttribute="trailing" constant="20" id="qj4-AG-Wjn"/>
+                            <constraint firstItem="tBy-5M-5HJ" firstAttribute="top" secondItem="hRy-nR-ckH" secondAttribute="bottom" constant="8" id="rRX-S6-y61"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="HJZ-lx-sBu"/>
+                    </view>
+                    <connections>
+                        <outlet property="movieNameTextField" destination="tBy-5M-5HJ" id="a2e-48-0li"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="g7W-P1-F5p" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2705" y="538"/>
+        </scene>
         <!--AddMovie-->
         <scene sceneID="l8N-fb-pib">
             <objects>
                 <viewControllerPlaceholder storyboardName="AddMovie" id="lYC-Ri-392" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yFC-k9-Bo1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2432" y="49"/>
-        </scene>
-        <!--EditMovie-->
-        <scene sceneID="UHx-g2-REU">
-            <objects>
-                <viewControllerPlaceholder storyboardName="EditMovie" id="pnz-6l-Fyi" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="fAY-Vi-dc8" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2432" y="229"/>
+            <point key="canvasLocation" x="2705" y="-169"/>
         </scene>
     </scenes>
     <resources>

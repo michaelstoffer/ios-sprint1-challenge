@@ -19,6 +19,8 @@
 		D6E2A6AB227DF7C000862FA5 /* AddMovieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6E2A6AA227DF7C000862FA5 /* AddMovieViewController.swift */; };
 		D6E2A6AD227DF80600862FA5 /* EditMovieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6E2A6AC227DF80600862FA5 /* EditMovieViewController.swift */; };
 		D6E2A6B1227DF91300862FA5 /* MovieTableViewCellDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6E2A6B0227DF91300862FA5 /* MovieTableViewCellDelegate.swift */; };
+		D6E2A6B4227E18D800862FA5 /* AddMovie.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6E2A6B2227E18D800862FA5 /* AddMovie.storyboard */; };
+		D6E2A6B6227E190300862FA5 /* EditMovie.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6E2A6B5227E190300862FA5 /* EditMovie.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +38,8 @@
 		D6E2A6AA227DF7C000862FA5 /* AddMovieViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMovieViewController.swift; sourceTree = "<group>"; };
 		D6E2A6AC227DF80600862FA5 /* EditMovieViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditMovieViewController.swift; sourceTree = "<group>"; };
 		D6E2A6B0227DF91300862FA5 /* MovieTableViewCellDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieTableViewCellDelegate.swift; sourceTree = "<group>"; };
+		D6E2A6B3227E18D800862FA5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Movie List/Storyboards/Base.lproj/AddMovie.storyboard"; sourceTree = "<group>"; };
+		D6E2A6B5227E190300862FA5 /* EditMovie.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = EditMovie.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +112,8 @@
 		D6E2A69E227DEFD400862FA5 /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
+				D6E2A6B5227E190300862FA5 /* EditMovie.storyboard */,
+				D6E2A6B2227E18D800862FA5 /* AddMovie.storyboard */,
 				467E199020F5165800E7FF73 /* Main.storyboard */,
 				8E5B3914218CDD4D00AB9C2B /* LaunchScreen.storyboard */,
 			);
@@ -185,6 +191,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				8E5B3916218CDD4D00AB9C2B /* LaunchScreen.storyboard in Resources */,
+				D6E2A6B6227E190300862FA5 /* EditMovie.storyboard in Resources */,
+				D6E2A6B4227E18D800862FA5 /* AddMovie.storyboard in Resources */,
 				467E199420F5165900E7FF73 /* Assets.xcassets in Resources */,
 				8E5B3917218CDD4D00AB9C2B /* LambdaLogoAssets.xcassets in Resources */,
 				467E199220F5165800E7FF73 /* Main.storyboard in Resources */,
@@ -218,6 +226,14 @@
 				467E199120F5165800E7FF73 /* Base */,
 			);
 			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D6E2A6B2227E18D800862FA5 /* AddMovie.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D6E2A6B3227E18D800862FA5 /* Base */,
+			);
+			name = AddMovie.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
