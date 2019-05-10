@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct Movie: Equatable {
+struct Movie: Equatable, Codable {
     var name: String
     var seen: Bool
     
